@@ -1,0 +1,36 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  h3 {
+    margin-bottom: 24px;
+  }
+  .container {
+    height: 80%;
+    width: 100%;
+    margin: auto 0;
+  }
+  ::ng-deep.pie-label {
+    font-size: 16px;
+    fill: white;
+  }
+  .button-wrapper {
+    margin-top: 24px;
+  }
+}
+::ng-deep.tooltip-custom-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  p {
+    font-size: 16px;
+    &:first-child {
+      margin-bottom: 4px;
+    }
+  }
+}
+::ng-deep.advanced-pie-legend .legend-items-container .legend-items .legend-item .item-value {
+  margin-top: 0!important;
+}

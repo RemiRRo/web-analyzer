@@ -1,0 +1,20 @@
+<h3>Common information</h3>
+<div class="container">
+  <ngx-charts-pie-chart
+    [results]="stats"
+    [legend]="true"
+    [explodeSlices]="false"
+    [labels]="true"
+    [doughnut]="false"
+    (select)="moreInformation($event)">
+    <ng-template #tooltipTemplate let-model=model>
+      <div class="tooltip-custom-content">
+        <p>{{model.name}}</p>
+        <p>{{model.value | fileSize}}</p>
+      </div>
+    </ng-template>
+  </ngx-charts-pie-chart>
+</div>
+
+
+

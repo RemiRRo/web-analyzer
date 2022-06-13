@@ -1,0 +1,23 @@
+:host {
+    width: inherit;
+    height: 64px;
+    background-color: #3f5175;
+    display: flex;
+    padding: 8px 24px;
+    .pull-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        .title {
+            line-height: 75px;
+            margin-left: 25px;
+            font-size: 2.5em;
+            font-family: geomanist, serif;
+            font-weight: 300;
+        }
+    }
+}
